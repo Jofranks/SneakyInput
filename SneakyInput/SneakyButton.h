@@ -51,13 +51,6 @@ public:
      */
     virtual void ccTouchCancelled(CCTouch *touch, CCEvent *event);
     
-    /**
-     *  根据矩形初始化
-     *
-     *  @param rect 矩形
-     *
-     *  @return 初始化是否成功
-     */
     bool initWithRect(CCRect rect);
     
 	void limiter(float delta);

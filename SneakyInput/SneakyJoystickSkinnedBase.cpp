@@ -8,23 +8,23 @@
 
 #include "SneakyJoystickSkinnedBase.h"
 
+#define SPRITE_RELEASE(sprite) sprite->release(); \
+sprite=NULL;
+
 SneakyJoystickSkinnedBase::~SneakyJoystickSkinnedBase()
 {
     if (backgroundSprite)
 	{
-		backgroundSprite->release();
-		backgroundSprite = NULL;
+		SPRITE_RELEASE(backgroundSprite);
 	}
 	if (thumbSprite)
 	{
-		thumbSprite->release();
-		thumbSprite = NULL;
+		SPRITE_RELEASE(thumbSprite);
 	}
     
 	if (joystick)
 	{
-		joystick->release();
-		joystick = NULL;
+		SPRITE_RELEASE(joystick);
 	}
 }
 

@@ -18,11 +18,6 @@ public:
     
     virtual ~SneakyButtonSkinnedBase();
     
-    /**
-     *  初始化
-     *
-     *  @return 初始化是否成功
-     */
     bool init();
     
     /**
@@ -30,9 +25,6 @@ public:
      */
     void watchSelf();
     
-    /**
-     *  setter函数
-     */
     void setContentSize(CCSize s);
     void setDefaultSprite(CCSprite* aSprite);
     void setActivatedSprite(CCSprite* aSprite);

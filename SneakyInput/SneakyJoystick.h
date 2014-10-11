@@ -16,13 +16,6 @@ class SneakyJoystick : public CCNode, public CCTargetedTouchDelegate
 public:
     virtual ~SneakyJoystick();
     
-    /**
-     *  根据矩形初始化
-     *
-     *  @param rect 矩形
-     *
-     *  @return 初始化是否成功
-     */
     bool initWithRect(CCRect rect);
     /**
      *  完全进入场景后开始执行
@@ -59,11 +52,6 @@ public:
      */
     virtual void ccTouchCancelled(CCTouch *touch, CCEvent *event);
     
-    /**
-     *  setter函数
-     *
-     *  @param b 参数
-     */
     void setIsDPad(bool b);
     void setJoystickRadius(float r);
     void setThumbRadius(float r);

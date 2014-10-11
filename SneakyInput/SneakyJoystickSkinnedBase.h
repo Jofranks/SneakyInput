@@ -18,18 +18,8 @@ public:
     
     virtual ~SneakyJoystickSkinnedBase();
     
-    /**
-     *  初始化
-     *
-     *  @return 初始化是否成功
-     */
     bool init();
     
-	/**
-	 *  setter 方法
-	 *
-	 *  @param s 参数
-	 */
 	void setContentSize(cocos2d::CCSize s);
 	void setBackgroundSprite(cocos2d::CCSprite *aSprite);
 	void setThumbSprite(cocos2d::CCSprite *aSprite);

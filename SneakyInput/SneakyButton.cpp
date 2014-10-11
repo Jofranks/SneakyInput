@@ -128,5 +128,5 @@ void SneakyButton::ccTouchEnded(CCTouch *touch, CCEvent *event)
 
 void SneakyButton::ccTouchCancelled(CCTouch *touch, CCEvent *event)
 {
-    this->ccTouchBegan(touch, event);
+    this->ccTouchEnded(touch, event);
 }
